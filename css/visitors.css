@@ -1,0 +1,148 @@
+.writeBtn {
+  position: fixed;
+  left: 6vw;
+  bottom: 3vw;
+}
+.listWrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow-y: scroll;
+  max-height: 55vh;
+}
+.listWrap > div {
+  /* height: fit-content;/ */
+}
+.listWrap > div > div {
+  width: 80%;
+}
+.listWrap::-webkit-scrollbar {
+  width: 6px;
+}
+.listWrap::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 20px;
+}
+.listWrap::-webkit-scrollbar-track {
+  background: #44444448;
+  border-radius: 20px;
+}
+
+.input {
+  position: fixed;
+  left: 50%;
+  bottom: 40%;
+  transform: translate(-50%, 50%);
+  background-color: #efefef;
+  /* width: 30vw; */
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+textarea {
+  height: 20vh;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+button {
+  border-radius: 5px;
+  background-color: #444;
+  color: #efefef;
+  cursor: pointer;
+}
+
+.write {
+  width: 30vw;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .write {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .listWrap {
+    max-height: 80vh;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .listWrap > div {
+    padding: 3vw 2vw;
+  }
+  .nickname {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+  }
+  .content {
+    font-size: 2.2vw;
+  }
+  button {
+    font-size: 2.3vw;
+    top: 2vw;
+    right: 2vw;
+  }
+
+  .write {
+    width: 80vw;
+  }
+  input,
+  textarea {
+    height: 8vw;
+  }
+  textarea {
+    height: 40vh;
+  }
+  .submit {
+    height: 8vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .listWrap {
+    display: block;
+    max-height: 67vh;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    padding-right: 4vw;
+    margin-top: 3vw;
+  }
+  .listWrap > div {
+    padding: 3vw 4vw;
+  }
+  .nickname {
+    font-size: 3.5vw;
+    margin-bottom: 3vw;
+  }
+  .content {
+    font-size: 3.2vw;
+  }
+  button {
+    font-size: 3.5vw;
+    top: 2vw;
+    right: 4vw;
+    padding: 2vw;
+  }
+
+  .writeBtn span {
+    font-size: 2.8vw;
+  }
+
+  .write {
+    width: 92vw;
+  }
+  input,
+  textarea {
+    height: 11vw;
+    font-size: 3.5vw;
+  }
+  textarea {
+    height: 50vh;
+  }
+  .submit {
+    height: 11vw;
+    font-size: 3.5vw;
+  }
+}

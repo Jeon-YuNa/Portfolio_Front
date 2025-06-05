@@ -1,0 +1,198 @@
+body {
+  background-color: #444;
+}
+header {
+  color: #efefef;
+}
+h1 {
+  background-image: url("../img/headerlogo-w.png");
+}
+/* 서브컴포넌트 */
+.textBox {
+  border: 1px solid #efefef;
+}
+.textBox .dot {
+  background-color: #efefef;
+}
+.textBox .gauge {
+  background-color: #efefef;
+}
+.textBox:hover span {
+  color: #444;
+}
+.textBox:hover .dot {
+  background-color: #444;
+}
+#project {
+  color: #efefef;
+  text-align: center;
+  /* letter-spacing: 0.2rem; */
+}
+#project h2 {
+  text-align: left;
+}
+#project p {
+  /* font-family: "GongGothicMedium"; */
+}
+.imgBox {
+  position: relative;
+  transform-origin: left;
+}
+.imgBox .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+}
+.imgBox:hover .img {
+  transform: translateY(-10%);
+}
+.useSkills span {
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  cursor: default;
+}
+.btns {
+  width: calc(75% + 3vw);
+  position: absolute;
+  right: 0;
+  bottom: 3vw;
+}
+aside span,
+.btns span {
+  background-color: #efefef;
+  color: #444;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 100vw;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.4s;
+  border: 1px solid #efefef;
+}
+aside span:hover,
+.btns span:hover {
+  background-color: #444;
+  color: #efefef;
+}
+[data-aos="fade-up-text"] {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 2vh, 0);
+  transform: translate3d(0, 2vh, 0);
+}
+[data-aos="fade-up-text"].aos-animate {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+@media screen and (max-width: 1080px) {
+  .clock {
+    background-color: #efefef;
+    color: #444;
+  }
+  #project {
+    flex-direction: column;
+  }
+  #project aside {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 4vw;
+    margin-top: 3vw;
+  }
+  #project aside span {
+    font-size: 1.6vw;
+  }
+  #project h2 {
+    font-size: 4vw;
+    padding-left: 4vw;
+    padding-top: 6vw;
+  }
+  #project .imgBox {
+    height: 20vh;
+    margin-bottom: 2vw;
+  }
+  #project .useSkills span {
+    font-size: 1.6vw;
+  }
+  #project .desc {
+    padding-bottom: 20vw;
+  }
+  #project .desc p {
+    font-size: 1.8vw;
+  }
+  #project .btns {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #efefef;
+    padding: 2vw 3vw;
+    gap: 3vw;
+  }
+  #project .btns a {
+    width: 100%;
+  }
+  #project .btns span {
+    width: 100%;
+    font-size: 1.8vw;
+    height: 5vw;
+    background-color: #444;
+    color: #efefef;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #project aside span {
+    font-size: 2vw;
+  }
+  #project h2 {
+    font-size: 5vw;
+  }
+  #project .useSkills span {
+    font-size: 2.2vw;
+  }
+  #project .desc p {
+    font-size: 2.2vw;
+  }
+  #project .btns span {
+    height: 7vw;
+    font-size: 2.6vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #project aside {
+    margin-top: 5vw;
+  }
+  #project aside span {
+    padding: 1.5vw 3vw;
+    font-size: 2.8vw;
+  }
+  #project h2 {
+    font-size: 7vw;
+    margin-top: 5vw;
+  }
+  #project .imgBox {
+    margin-bottom: 3vw;
+  }
+  #project .useSkills span {
+    font-size: 3.2vw;
+  }
+  #project .desc {
+    padding-left: 4vw;
+    padding-bottom: 40vw;
+  }
+  #project .desc p {
+    text-align: left;
+    font-size: 3.2vw;
+  }
+  #project .btns {
+    padding: 4vw 4vw;
+    gap: 4vw;
+  }
+  #project .btns span {
+    height: 10vw;
+    font-size: 3.5vw;
+  }
+}

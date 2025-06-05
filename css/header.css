@@ -1,0 +1,88 @@
+@media screen and (max-width: 1080px) {
+  header {
+    padding: 0 0;
+  }
+  h1 {
+    width: 30vw;
+    height: 10vw;
+    margin-top: 2vw;
+  }
+  header > div {
+    padding: 1vw 4vw;
+  }
+  .clock {
+    background-color: #444;
+    color: #efefef;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ampm {
+    font-size: 1.3vw;
+    font-weight: 700;
+    margin-right: 0.5vw;
+  }
+  .time {
+    width: 7vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+  }
+  nav {
+    /* transform: translateY(50%); */
+    justify-content: flex-end;
+    gap: calc(var(--spacing) * 8);
+    margin-top: 3vw;
+  }
+  nav .textBox {
+    margin-bottom: 0;
+  }
+  nav .textBox span {
+    font-size: 1.3vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ampm {
+    font-size: 2vw;
+  }
+  .time {
+    width: 11vw;
+    font-size: 2vw;
+  }
+  nav .textBox span {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ampm {
+    font-size: 2.8vw;
+  }
+  .time {
+    width: 14vw;
+    font-size: 2.8vw;
+  }
+  header > div:last-child {
+    gap: calc(var(--spacing) * 15);
+  }
+  header a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    width: 100%;
+    height: 18vw;
+    margin-top: 2vw;
+  }
+  nav {
+    margin-top: 3vw;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: calc(var(--spacing) * 2);
+  }
+  nav .textBox {
+    width: 100%;
+  }
+  nav .textBox span {
+    font-size: 2.8vw;
+    white-space: nowrap;
+  }
+}

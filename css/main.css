@@ -1,0 +1,148 @@
+/* 메인css */
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* padding-top: 22vh; */
+  letter-spacing: 0.2rem;
+}
+
+.title {
+  position: relative;
+  margin: 0 0 0 auto;
+  width: 65vw;
+  height: 40vh;
+  overflow: hidden;
+  z-index: 99;
+}
+.blurText {
+  width: 100%;
+  height: 100%;
+  mask-image: url("../img/mainlogo.png");
+  mask-position: center;
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+.blurBG {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  border: 1px solid #fff;
+  backdrop-filter: blur(26px);
+  color: #4444445e;
+  background-color: rgba(68, 68, 68, 0.1);
+}
+.pointer {
+  position: relative;
+  z-index: 1;
+  width: 40vw;
+  height: 40vw;
+  background-color: #efefef;
+  border-radius: 50%;
+  color: transparent;
+  background-image: radial-gradient(#efffb7b9, transparent 70%);
+  transition: all ease-in-out;
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    padding: 4vw;
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+  }
+  main > div {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main article {
+    width: 100%;
+  }
+  main article > div h2:first-child {
+    font-size: 4.2vw;
+  }
+  main article > div h2 {
+    font-size: 7vw;
+  }
+  main article p {
+    width: 100%;
+    font-size: 1.3vw;
+    display: flex;
+    flex-direction: column;
+  }
+  main article p span {
+    margin-bottom: 1vw;
+    margin-right: 0;
+  }
+  .link {
+    margin-bottom: 8vw;
+  }
+  .link a {
+    width: fit-content;
+  }
+  .link .textBox {
+    margin-bottom: 2vw;
+  }
+  .link .textBox span {
+    font-size: 1.3vw;
+  }
+  .title {
+    width: 100%;
+    height: 32vh;
+  }
+}
+@media screen and (max-width: 1080px) and (max-height: 1200px) {
+  main {
+    padding: 4vw;
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  main::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  main article > div h2:first-child {
+    font-size: 5vw;
+  }
+  main article > div h2 {
+    font-size: 8vw;
+  }
+  main article p {
+    font-size: 2vw;
+  }
+  .link .textBox span {
+    font-size: 2vw;
+  }
+  .pointer {
+    width: 100vw;
+    height: 100vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  main article {
+    padding-bottom: 0;
+  }
+  main article > div h2:first-child {
+    margin-top: 5vw;
+    font-size: 6vw;
+  }
+  main article > div h2 {
+    font-size: 10vw;
+  }
+  main article p {
+    font-size: 2.8vw;
+  }
+  .title {
+    height: 50vw;
+  }
+  .link {
+    margin-bottom: 14vw;
+  }
+  .link .textBox span {
+    font-size: 2.8vw;
+  }
+}
