@@ -2,24 +2,25 @@
 import TextBox from "../main/subcomponents/TextBox";
 import Clock from "./subcomponents/Clock";
 import "../../css/header.css";
+import Link from "next/link";
 const MobileHeader = () => {
   return (
     <header className="py-6" data-aos="fade-down" data-aos-duration="1200">
       <Clock />
       <div className="flex justify-between items-start">
-        <a href="/">
+        <Link href="/">
           <h1 className="w-36 h-24"></h1>
-        </a>
+        </Link>
         <nav className="flex gap-10 justify-end">
-          <a href="/projects">
+          <Link href="/projects">
             <TextBox text="Project" />
-          </a>
-          <a href="/skill">
+          </Link>
+          <Link href="/skill">
             <TextBox text="skill" />
-          </a>
-          <a href="/visitors">
+          </Link>
+          <Link href="/visitors">
             <TextBox text="visitor note" />
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

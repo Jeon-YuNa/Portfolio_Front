@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import TextBox from "../main/subcomponents/TextBox";
 import Clock from "./subcomponents/Clock";
 // import'../../../img/headerlogo.png'
@@ -7,21 +8,21 @@ const Header = () => {
   return (
     <header className="py-6" data-aos="fade-down" data-aos-duration="1200">
       <div className="flex justify-between items-start">
-        <a href="/">
+        <Link href="/">
           <h1 className="w-[14vw] h-[4vw]"></h1>
-        </a>
+        </Link>
         <Clock />
       </div>
       <nav className="flex gap-10 justify-center">
-        <a href="/projects">
+        <Link href="/projects">
           <TextBox text="Project" />
-        </a>
-        <a href="/skill">
+        </Link>
+        <Link href="/skill">
           <TextBox text="skill" />
-        </a>
-        <a href="/visitors">
+        </Link>
+        <Link href="/visitors">
           <TextBox text="visitor note" />
-        </a>
+        </Link>
       </nav>
     </header>
   );

@@ -1,26 +1,29 @@
-body {
-  background-color: #444;
+body.project-page {
+  background-color: #444444;
 }
-header {
+body.project-page header {
   color: #efefef;
 }
-h1 {
+body.project-page article {
+  width: 100%;
+}
+body.project-page h1 {
   background-image: url("../img/headerlogo-w.png");
 }
 /* 서브컴포넌트 */
-.textBox {
+body.project-page .textBox {
   border: 1px solid #efefef;
 }
-.textBox .dot {
+body.project-page .textBox .dot {
   background-color: #efefef;
 }
-.textBox .gauge {
+body.project-page .textBox .gauge {
   background-color: #efefef;
 }
-.textBox:hover span {
+body.project-page .textBox:hover span {
   color: #444;
 }
-.textBox:hover .dot {
+body.project-page .textBox:hover .dot {
   background-color: #444;
 }
 #project {
