@@ -36,7 +36,7 @@ body {
   overflow: hidden;
   color: #444;
   padding: 0 6vw;
-  font-family: "Orbitron", sans-serif;
+  font-family: "GongGothicMedium";
 }
 body::-webkit-scrollbar {
   display: none;
